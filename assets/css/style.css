@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+
+/*Variables*/
+:root {
+    --c-brand: #A5C9CA;
+    --c-brand-peach: #FF7272;
+    --c-brand-rgb: 165 201 202;
+    --c-dark: #2C3333;
+    --c-body: #395B64;
+    --f-main: "Bai Jamjuree", sans-serif;
+    --transition: all .5s cubic-bezier(.15, .8, .4, 1);
+    --shadow: 0px 18px 36px rgba(0,0,0,0.1);
+}
+
+
+/*Default properties and classes*/
+body {
+    font-family: var(--f-main);
+    color: var(--c-body);
+    line-height: 1.5;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    font-weight: 800;
+    color: var(--c-dark);
+}
+
+a {
+    text-decoration: none;
+    color: var(--c-dark);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--c-brand);
+}
+
+img {
+    width: 100%;
+}
+
+.section-padding {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.text-brand {
+    color: var(--c-brand-peach);
+}
+
+
+/* Navbar */
+.navbar {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.navbar .navbar-nav .nav-link {
+    font-weight: 600;
+    color: var(--c-dark);
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--c-brand-peach);
+}
+
+.navbar-brand {
+    font-size:24px;
+    font-weight: 800;
+}
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    margin-top: 5px;
+    width: 32px;
+    height: 32px;
+    color: white;
+    background-color: var(--c-brand-peach);
+    border: 2px solid var(--c-brand-peach);
+   
+}
+
+.social-icon:hover {
+    background-color: transparent;
+}
+
+@media (min-width: 990px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
+/* Home */
+#home {
+    background-image: url("../images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.btn {
+    font-weight: 400;
+    padding: 12px 24px;
+    border-radius: 0;
+    border-width: 4px;    
+}
+
+.btn-brand {
+    color: white;
+    background-color: var(--c-brand-peach);
+    border-color: var(--c-brand-peach);
+}
+
+.btn-brand:hover {
+    color: var(--c-brand-peach);
+    background-color: transparent;
+}
+
+
+
