@@ -12,60 +12,133 @@
 <body>
     
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container">
-          <a class="navbar-brand" href="#">Alejandro Toledo</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#home">About me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#home">Skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#home">Proyects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#home">Certifications</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#home">Contact</a>
-              </li>
-            </ul>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="social-icon" href="https://linkedin.com/in/alejandro-toledo-dev"><i class="ri-linkedin-box-fill"></i></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="social-icon" href="https://github.com/toledoardev"><i class="ri-github-fill"></i></i></a>
-                </li>
-            </ul>
-          </div>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Alejandro Toledo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-me">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#certifications">Certifications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav flex-row">
+            <li class="nav-item">
+                <a class="social-icon" href="https://linkedin.com/in/alejandro-toledo-dev"><i class="ri-linkedin-box-fill"></i></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="social-icon" href="https://github.com/toledoardev"><i class="ri-github-fill"></i></i></a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
     
     <!-- Home -->
     <section id="home" class="d-flex align-items-center min-vh-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h1 class="display-3 fw-bold">Hi there! I am <span class="text-brand">Alejandro Toledo.</span></h1>
-                    <h4 class="mt-4 mb-5">Full Stack Web Developer</h4>
-                    <a href="#" class="btn btn-brand">Get Connected</a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1 class="display-3 fw-bold">Hi there! I am <span class="text-brand">Alejandro Toledo.</span></h1>
+            <h4 class="mt-4 mb-5">Full Stack Web Developer</h4>
+            <a href="#" class="btn btn-brand">Get Connected</a>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <!-- About me -->
+    <section id="about-me" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-title text-center">
+              <h1>About me</h1>
+              <p class="mx-auto w-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ad amet dignissimos molestiae, inventore omnis doloribus facere aperiam neque sed ex optio placeat praesentium tempora sequi adipisci temporibus iure eum?</p>
+              <div class="section-line"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center mt-4 gy-4">
+          <div class="col-lg-4 col-sm-6">
+            <div class="about-me-card border py-4 px-3">
+              <div class="about-me-icon">
+                <i class="ri-reactjs-line"></i>
+              </div>
+              <h5 class="about-me-title mt-4 mb-4">Front End Skills</h5>
+              <h6>REACT JS</h6>
+              <h6>MATERIAL UI</h6>
+              <h6>STYLED COMPONENTS</h6>
+              <h6>JAVASCRIPT</h6>
+              <h6>HTML</h6>
+              <h6>CSS</h6>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="about-me-card border py-4 px-3">
+              <div class="about-me-icon">
+                <i class="ri-npmjs-line"></i>
+              </div>
+              <h5 class="about-me-title mt-4 mb-4">Back End Skills</h5>
+              <h6>NODE JS</h6>
+              <h6>EXPRESS JS</h6>
+              <h6>POSTMAN</h6>
+              <h6>INSOMNIA</h6>
+              <h6>MYSQL</h6>
+              <h6>MONGODB</h6>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mx-auto">
+            <div class="about-me-card border py-4 px-3">
+              <div class="about-me-icon">
+                <i class="ri-settings-4-line"></i>              
+              </div>
+              <h5 class="about-me-title mt-4 mb-4">Soft Skills</h5>
+              <h6>FAST LEARNING</h6>
+              <h6>TEAM WORKER</h6>
+              <h6>COMUNICATION</h6>
+              <h6>PROBLEMS SOLVER </h6>
+              <h6>ANALITICAL THINKING</h6>
+              <h6>CREATIVITY & INNOVATION</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <!-- Projects -->
+     <section id="projects" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-title text-center">
+              <h1>Projects</h1>
+              <p class="mx-auto w-50">Here are a few projects I've worked on. Want to see more? 
+                <a href="#contact"><span class="contact-me fw-bold">Email me.</span></a> 
+              </p>
+              <div class="section-line"></div>
+            </div>
+          </div>
+        </div>
+      </div>  
     </section>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="./assets/js/app.js"></script>
+    <script src="assets/js/app.js"></script>
 </body>
 </html>
