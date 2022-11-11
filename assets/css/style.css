@@ -88,6 +88,18 @@ img {
     font-weight: 800;
 }
 
+.navbar-toggler {
+    border-radius: none;
+}
+
+.navbar-toggler:hover {
+    border-color: var(--c-brand-peach);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
 .social-icon {
     display: inline-flex;
     align-items: center;
@@ -245,13 +257,17 @@ img {
 
 /* Footer */
 footer {
-    padding-top: 120px;
-    padding-bottom: 80px;
+    padding-top: 180px;
+    padding-bottom: 24px;
     background-color: var(--c-dark);
 }
 
 footer h4 {
     color: white;
+}
+
+footer h4:hover {
+    color: var(--c-brand-peach);
 }
 
 footer p, footer li {
@@ -261,4 +277,13 @@ footer p, footer li {
 footer ul {
     list-style: none;
     padding: 0;
+}
+
+.footer-top {
+    padding-bottom: 100px;
+    border-bottom: 1px solid grey;
+}
+
+.footer-bottom {
+    padding-top: 24px;
 }

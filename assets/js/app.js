@@ -5,3 +5,8 @@ window.onscroll = function() {
         document.getElementById('navbar').classList.remove('scrolled');
     }
 }
+
+// Animate on Scroll
+AOS.init({
+    duration: 1000,
+});
