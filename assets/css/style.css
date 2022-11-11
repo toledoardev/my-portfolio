@@ -40,8 +40,8 @@ img {
 }
 
 .section-padding {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 75px;
+    padding-bottom: 75px;
 }
 
 .section-tittle {
@@ -208,4 +208,57 @@ img {
 
 .project:hover img {
     transform: translateY(-100%);
+}
+
+
+/* Certificates */
+.certificate-section {
+    background: rgb(239,236,244);
+    background: linear-gradient(90deg, rgba(239,236,244,1) 0%, rgba(244,236,236,1) 35%, rgba(248,244,244,1) 100%);
+}
+
+.certificate-tittle {
+    color: var(--c-brand-peach);
+}   
+
+.certificate {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.certificate:hover{
+    scale: 1.1;
+}
+
+
+/* Contact */
+.contact-section .form-control {
+    border-radius: 0;
+}
+
+.contact-section .form-control:focus {
+    box-shadow: none;
+    border-color: var(--c-brand-peach);
+}
+
+
+/* Footer */
+footer {
+    padding-top: 120px;
+    padding-bottom: 80px;
+    background-color: var(--c-dark);
+}
+
+footer h4 {
+    color: white;
+}
+
+footer p, footer li {
+    color: grey;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
 }
