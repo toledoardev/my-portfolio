@@ -3,14 +3,18 @@
 
 /*Variables*/
 :root {
-    --c-brand: #A5C9CA;
-    --c-brand-peach: #FF7272;
-    --c-brand-rgb: 165 201 202;
+    --c-brand-primary: #FF7272;
+    --c-brand-secondary: #A5C9CA;
+    --c-brand-rgb: rgb(239,236,244);
     --c-dark: #2C3333;
     --c-body: #395B64;
+    --c-grey: grey;
+    --c-white: white;
+    --linear-gradient: linear-gradient(90deg, rgba(239,236,244,1) 0%, rgba(244,236,236,1) 35%, rgba(248,244,244,1) 100%);
     --f-main: "Bai Jamjuree", sans-serif;
     --transition: all .5s cubic-bezier(.15, .8, .4, 1);
     --shadow: 0px 18px 36px rgba(0,0,0,0.1);
+    --transform: translate3d(2px,2px,4px);
 }
 
 
@@ -33,7 +37,7 @@ a {
 }
 
 a:hover {
-    color: var(--c-brand);
+    color: var(--c-brand-secondary);
 }
 
 img {
@@ -41,38 +45,38 @@ img {
 }
 
 .section-padding {
-    padding-top: 75px;
-    padding-bottom: 75px;
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
 }
 
 .section-tittle {
-    max-width: 400px;
-    margin: 0 auto 80px auto;
+    max-width: 24rem;
+    margin: 0 auto 4.8rem auto;
 }
 
 .section-line {
-    width: 100px;
-    height: 2px;
-    background-color: var(--c-brand-peach);
+    width: 6rem;
+    height: 0.125rem;
+    background-color: var(--c-brand-primary);
     display: inline-block;
 }
 
 .text-brand {
-    color: var(--c-brand-peach);
+    color: var(--c-brand-primary);
 }
 
 
 /* Navbar */
 .navbar {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     transition: var(--transition);
 }
 
 .navbar.scrolled {
-    padding-top: 8px;
-    padding-bottom: 8px;
-    background-color: white;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: var(--c-white);
 }
 
 .navbar .navbar-nav .nav-link {
@@ -81,12 +85,17 @@ img {
 }
 
 .navbar .navbar-nav .nav-link:hover {
-    color: var(--c-brand-peach);
+    color: var(--c-brand-primary);
 }
 
 .navbar-brand {
-    font-size:24px;
+    font-size: 1.5rem;
     font-weight: 800;
+}
+
+#brand:hover {
+    color: var(--c-brand-primary);
+    transform: var(--transform);
 }
 
 .navbar-toggler {
@@ -94,7 +103,7 @@ img {
 }
 
 .navbar-toggler:hover {
-    border-color: var(--c-brand-peach);
+    border-color: var(--c-brand-primary);
 }
 
 .navbar-toggler:focus {
@@ -105,92 +114,112 @@ img {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin-right: 5px;
-    margin-top: 5px;
-    width: 32px;
-    height: 32px;
-    color: white;
-    background-color: var(--c-brand-peach);
-    border: 2px solid var(--c-brand-peach);
+    margin-right: 0.3rem;
+    margin-top: 0.3rem;
+    width: 2rem;
+    height: 2rem;
+    color: var(--c-white);
+    background-color: var(--c-brand-primary);
+    border: 2px solid var(--c-brand-primary);
    
 }
 
 .social-icon:hover {
-    color: var(--c-brand-peach);
+    color: var(--c-brand-primary);
     background-color: transparent;
 }
 
 @media (min-width: 990px) {
     .navbar-expand-lg .navbar-nav .nav-link {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 0.9rem;
+        padding-right: 0.9rem;
     }
 }
 
 @media (max-width: 990px) {
     .navbar {
-        background-color: white;
+        background-color: var(--c-white);
     }
 }
 
 
 /* Home */
 #home {
-    background-image: url("../images/me_hero.jpg");
+    position: relative;
+    background-image: url("../images/hero.jpg");
     background-size: cover;
     background-position: center;
+}
+
+.home-picture {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    width: 50%;
+    height: 100%;
+    background-image: url("../images/my_picture.png");
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 990px) {
+    .home-picture {
+        width: 45%;
+        height: 45%;
+    }
 }
 
 .btn {
     font-weight: 400;
     font-size: medium;
-    padding: 12px 24px;
+    padding: 0.75rem 1.5rem;
     border-radius: 0;
-    border-width: 4px;    
+    border-width: 0.25rem;    
 }
 
 .btn-brand {
-    color: white;
-    background-color: var(--c-brand-peach);
-    border-color: var(--c-brand-peach);
+    color: var(--c-white);
+    background-color: var(--c-brand-primary);
+    border-color: var(--c-brand-primary);
 }
 
 .btn-brand:hover {
-    color: var(--c-brand-peach);
+    color: var(--c-brand-primary);
     background-color: transparent;
 }
 
 
 /* Abotu me */
 .about-me-title {
-    color: var(--c-brand-peach);
+    color: var(--c-brand-primary);
 }
 
 .about-me-icon {
-    width: 50px;
-    height: 50px;
-    font-size: 24px;
-    color: white;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    color: var(--c-white);
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--c-brand-peach);
+    background-color: var(--c-brand-primary);
 }
 
 .about-me-icon:hover {
-    color: var(--c-brand-peach);
+    color: var(--c-brand-primary);
     background-color: transparent;
 }
 
 .about-me-card > h6:hover {
-    color: var(--c-brand-peach);
-    transform: translate3d(2px,2px,4px);
+    color: var(--c-brand-primary);
+    transform: var(--transform);
 } 
 
 
 /* Projects */
 .email-me:hover {
-    color: var(--c-brand-peach);
+    color: var(--c-brand-primary);
 }
 
 .project {
@@ -207,7 +236,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--c-brand-peach);
+    background-color: var(--c-brand-primary);
 }
 
 
@@ -226,18 +255,18 @@ img {
 
 /* Certificates */
 .certificate-section {
-    background: rgb(239,236,244);
-    background: linear-gradient(90deg, rgba(239,236,244,1) 0%, rgba(244,236,236,1) 35%, rgba(248,244,244,1) 100%);
+    background: var(--c-brand-rgb);
+    background: var(--linear-gradient);
 }
 
 .certificate-tittle {
-    color: var(--c-brand-peach);
+    color: var(--c-brand-primary);
 }   
 
 .certificate {
     width: 100%;
     height: 100%;
-    background-color: white;
+    background-color: var(--c-white);
 }
 
 .certificate:hover{
@@ -252,27 +281,27 @@ img {
 
 .contact-section .form-control:focus {
     box-shadow: none;
-    border-color: var(--c-brand-peach);
+    border-color: var(--c-brand-primary);
 }
 
 
 /* Footer */
 footer {
-    padding-top: 180px;
-    padding-bottom: 24px;
+    padding-top: 10.5rem;
+    padding-bottom: 1.5rem;
     background-color: var(--c-dark);
 }
 
 footer h4 {
-    color: white;
+    color: var(--c-white);
 }
 
 footer h4:hover {
-    color: var(--c-brand-peach);
+    color: var(--c-brand-primary);
 }
 
 footer p, footer li {
-    color: grey;
+    color: var(--c-grey);
 }
 
 footer ul {
@@ -280,11 +309,20 @@ footer ul {
     padding: 0;
 }
 
+footer a {
+    text-decoration: none;
+    color: var(--c-brand-secondary);
+}
+
+footer a:hover {
+    color: var(--c-brand-primary);
+}
+
 .footer-top {
-    padding-bottom: 100px;
-    border-bottom: 1px solid grey;
+    padding-bottom: 6rem;
+    border-bottom: 0.06rem solid var(--c-grey);
 }
 
 .footer-bottom {
-    padding-top: 24px;
+    padding-top: 1.5rem;
 }
