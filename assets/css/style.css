@@ -167,6 +167,7 @@ img {
     .home-picture {
         width: 45%;
         height: 45%;
+        border-radius: 50%;
     }
 }
 
